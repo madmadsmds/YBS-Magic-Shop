@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Fleur";
+    src: url(fonts/Fleur_De_Leah/FleurDeLeah-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Merriwether";
+    src: url(fonts/Merriweather/Merriweather-VariableFont_opsz\,wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url(fonts/Fraunces/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@media (max-width: 800px) {
+    header, footer {
+        max-height: none;
+    }
+
+    header {
+        padding-bottom: 2rem;
+    }
+
+    main {
+        max-width: 85% !important;
+        padding-top: 12rem;
+    }
+
+    .decor {
+        display: none;
+    }
+}
+
+html {scroll-behavior: smooth;}
+
+.direct:hover, .contact:hover, .menu:hover{ 
+    zoom: 125%;
+    transition: all .3s ease-in-out;
+    text-shadow: 0 0 5px #ba0062;
+
+}
+
+body {
+    background-image: url(images/background.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+header {
+    background-color: #f6cde0;
+    border-bottom: 2px solid #ba0062;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'logo menu';
+    padding-bottom: 0.15rem;
+    
+    align-content: space-evenly;
+}
+
+main {
+    background-color: rgba(246, 205, 224, .85);
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+    margin: auto;
+    max-width: 75%;
+    min-height: calc(100vh - 18rem);
+}
+  
+  footer {
+    font-family: "Merriwether", 'Times New Roman', Times, serif;
+    background-color: #000000;
+    color: #f6cde0;
+    position: static;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    left: 0;
+    bottom: 0;
+}
+  
+  header, footer {text-align: center;
+}
+
+
+#title {
+    text-shadow: 0 0 5px #ba0062;
+    font-family: "Fleur", 'Times New Roman', Times, serif; 
+    font-size: 2.5rem;
+    color: #000000;
+    grid-area: logo;
+    text-align: left;
+    margin-left: 1.5rem;
+    vertical-align: middle;
+    align-self: center;
+}
+
+#menu {
+    grid-area: menu;
+    vertical-align: middle;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-self: end;
+}
+
+
+.leaf {
+    vertical-align: middle;
+}
+
+.direct {
+    text-decoration: none;
+    font-family: "Fraunces", 'Times New Roman', Times, serif;
+    color: black; 
+    font-size: 1.3rem;  
+}
+
+h1, h3 {
+    font-family: "Fleur", 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    text-shadow: 0 0 7px #ba0062; 
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Fraunces", 'Times New Roman', Times, serif;
+}
+
+.menu, .cred, .contact {
+    font-family: "Fraunces", 'Times New Roman', Times, serif;
+    color: #f6cde0;
+    text-decoration: none;
+}
+
+.menu {
+    font-size: 1rem;
+}
